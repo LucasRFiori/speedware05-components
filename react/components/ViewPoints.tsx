@@ -29,8 +29,8 @@ export function ViewPoints() {
   }
 
   async function getUserPoints() {
-    const { data }: DataPointsType = await axios.post(`https://devfiori--speedware.myvtex.com/getTotalPoints`, {
-      userEmail: 'lucasfiori2002@gmail.com'
+    const { data }: DataPointsType = await axios.post(`https://speedware05--speedware.myvtex.com/getTotalPoints`, {
+      userEmail: profile
     })
     setPoints(data.totalPoints)
   }
@@ -40,7 +40,7 @@ export function ViewPoints() {
   }, [])
 
   useEffect(() => {
-    if (!profile.email) return
+    if (!profile?.email) return
     getUserPoints()
   }, [profile])
 
