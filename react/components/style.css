@@ -1,0 +1,27 @@
+.ViewPoints {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  width: 150px;
+  margin-right: 10px;
+  border-radius: 0.25rem;
+  height: 70px;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+}
+
+.Container .title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.contador {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
